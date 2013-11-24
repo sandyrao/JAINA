@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_jaina_education_Student" object="${student}" path="/students" z="9v5sOHBayokaHa0VbHAs9REAkwM=">
+        <field:display field="firstName" id="s_org_jaina_education_Student_firstName" object="${student}" z="HvXE75Bgp4SEaIB/1M75UXjBSeg="/>
+        <field:display field="lastName" id="s_org_jaina_education_Student_lastName" object="${student}" z="tkdudPNyrRtqj8Iaf9rc1MjGqvU="/>
+        <field:display field="id" id="s_org_jaina_education_Student_id" object="${student}" z="UxeJ9NrEpeifPMxGk6J6qU706D8="/>
+        <field:display field="middleName" id="s_org_jaina_education_Student_middleName" object="${student}" z="VwHAjT0NqFVMPuZqPZ03OpSUJj0="/>
+        <field:display date="true" dateTimePattern="${student_dateofbirth_date_format}" field="dateOfBirth" id="s_org_jaina_education_Student_dateOfBirth" object="${student}" z="7LDNm3uFj3u3KDaD52AglVagK1k="/>
+        <field:display field="addressLine1" id="s_org_jaina_education_Student_addressLine1" object="${student}" z="C46bAhm4HF9FqXDvNBXOHqB/g+E="/>
+        <field:display field="addressLine2" id="s_org_jaina_education_Student_addressLine2" object="${student}" z="pY4KJG1jpnVrcFxHpSHBNKaHdsE="/>
+        <field:display field="city" id="s_org_jaina_education_Student_city" object="${student}" z="pvOijbjRkE3kok3UIXfBxswYJpI="/>
+        <field:display field="zipCode" id="s_org_jaina_education_Student_zipCode" object="${student}" z="CP+AeSXk+5BneCf1oQ9j94cy130="/>
+        <field:display field="country" id="s_org_jaina_education_Student_country" object="${student}" z="bMyL3vH4Mmg7L0/bsNHFIjCa87g="/>
+        <field:display field="phoneNo" id="s_org_jaina_education_Student_phoneNo" object="${student}" z="LGLFNKgCa7hPh5NKxhLIPE3ijas="/>
+        <field:display field="mobNo" id="s_org_jaina_education_Student_mobNo" object="${student}" z="+93L0W/j3D/C+DBI1YPlVuKNM+4="/>
+        <field:display field="fax" id="s_org_jaina_education_Student_fax" object="${student}" z="/SBvhMV6XSJPK6+b5G+bXUEQ7SE="/>
+        <field:display field="email" id="s_org_jaina_education_Student_email" object="${student}" z="Pc0fBgnLZYF4R6MEi+JvtACTHFc="/>
+        <field:display field="fathersFirstName" id="s_org_jaina_education_Student_fathersFirstName" object="${student}" z="V3zeiWJ0FAS5yzwQYWefHBBCE8s="/>
+        <field:display field="fathersMiddleName" id="s_org_jaina_education_Student_fathersMiddleName" object="${student}" z="l5rTL4xy2QGZCkVycbxFOn+2NTQ="/>
+        <field:display field="fathersLastName" id="s_org_jaina_education_Student_fathersLastName" object="${student}" z="v/J6cJMQps86LCsiWcU/jODoXWM="/>
+        <field:display field="studentFileActive" id="s_org_jaina_education_Student_studentFileActive" object="${student}" z="Tfi87BN1juEoR7rPrD9NeZunPhk="/>
+        <field:display field="relationship" id="s_org_jaina_education_Student_relationship" object="${student}" z="E+bNaPOfBNlR2NkKebzFV58Zh10="/>
+        <field:display field="guardianAddressLine1" id="s_org_jaina_education_Student_guardianAddressLine1" object="${student}" z="gBUvyeIYpOJ7cbvBh+eghWvPZFw="/>
+        <field:display field="guardianAddressLine2" id="s_org_jaina_education_Student_guardianAddressLine2" object="${student}" z="4mTWpBbd1ysxlOjs5KleWDt6sZs="/>
+    </page:show>
+</div>

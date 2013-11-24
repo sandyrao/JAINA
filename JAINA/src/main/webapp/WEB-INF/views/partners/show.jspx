@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_jaina_education_Partner" object="${partner}" path="/partners" z="jYmaz91hctsy7YRrdeYL2vRckbs=">
+        <field:display field="name" id="s_org_jaina_education_Partner_name" object="${partner}" z="mVFvMRPboN0pSnu2eKjzbO53R34="/>
+        <field:display field="nonProfitId" id="s_org_jaina_education_Partner_nonProfitId" object="${partner}" z="JUvs7MVClLA+BAqu0s0Oyoke3GU="/>
+        <field:display field="address1" id="s_org_jaina_education_Partner_address1" object="${partner}" z="iqtl6nz7rmZM6l2AaT1ND6i4dbE="/>
+        <field:display field="address2" id="s_org_jaina_education_Partner_address2" object="${partner}" z="i5V2S0tjZMbz4qIAxu4QBLl+luE="/>
+        <field:display field="city" id="s_org_jaina_education_Partner_city" object="${partner}" z="Ke/pKnS63n04J8sP0I1+5fyZA5M="/>
+        <field:display field="zip" id="s_org_jaina_education_Partner_zip" object="${partner}" z="FtMaopIdWwtKdJ1GZzxRRv6GFm0="/>
+        <field:display field="country" id="s_org_jaina_education_Partner_country" object="${partner}" z="du+t2C/GdE8yC5kV65iy2HEQ9MU="/>
+        <field:display field="phone" id="s_org_jaina_education_Partner_phone" object="${partner}" z="gk5EIieKE8lNYNiskPIdve4LODc="/>
+        <field:display field="mobile" id="s_org_jaina_education_Partner_mobile" object="${partner}" z="exKhTXsfNZQTs/le7/nNr6O3TRs="/>
+        <field:display field="fax" id="s_org_jaina_education_Partner_fax" object="${partner}" z="FTlXYwuO304XdFhCsaE6tdpbG8Q="/>
+        <field:display field="email" id="s_org_jaina_education_Partner_email" object="${partner}" z="6wg1MrxHkC6HUd1KB/VGDS8+gzw="/>
+        <field:display field="status" id="s_org_jaina_education_Partner_status" object="${partner}" z="ldZj2/xphKHtJWXCSWSD1LCkdxE="/>
+        <field:display field="contactFirstName" id="s_org_jaina_education_Partner_contactFirstName" object="${partner}" z="wl6t3rnVPgqnx5loiDjEvCwwS7s="/>
+        <field:display field="contactMiddleName" id="s_org_jaina_education_Partner_contactMiddleName" object="${partner}" z="Jz8SGTu3H7OoIygdBDqWEEQyJ90="/>
+        <field:display field="contactLastName" id="s_org_jaina_education_Partner_contactLastName" object="${partner}" z="9aFpw/QO4SbT65pf7ERu2grOy6A="/>
+        <field:display field="contactId" id="s_org_jaina_education_Partner_contactId" object="${partner}" z="EvY45q+J/KVG6m4sj7w4vqvyFCY="/>
+        <field:display field="contactAddress1" id="s_org_jaina_education_Partner_contactAddress1" object="${partner}" z="pZS6ZgbYewQaEe2KPUcLka1NpO0="/>
+        <field:display field="contactAddress2" id="s_org_jaina_education_Partner_contactAddress2" object="${partner}" z="PGhiv/7s3Mo5AyMUYlCH2EWVvVY="/>
+        <field:display field="contactCity" id="s_org_jaina_education_Partner_contactCity" object="${partner}" z="GQog9LRpu61mAmOy4bRjfi6zWck="/>
+        <field:display field="contactZip" id="s_org_jaina_education_Partner_contactZip" object="${partner}" z="CROm6vs+ieCgeQKzbGlCH3DWkro="/>
+        <field:display field="contactCountry" id="s_org_jaina_education_Partner_contactCountry" object="${partner}" z="3ukH75B9Sy66WPwEk5AVEcfnS1g="/>
+        <field:display field="contactPhone" id="s_org_jaina_education_Partner_contactPhone" object="${partner}" z="0679XWiSY4wWgCXBVWVtCtffC8M="/>
+        <field:display field="contactMobileNo" id="s_org_jaina_education_Partner_contactMobileNo" object="${partner}" z="qdht/xDOF0HvDemzYkuP2S+oJnE="/>
+        <field:display field="contactFax" id="s_org_jaina_education_Partner_contactFax" object="${partner}" z="D/frYypA4M0fZxrSCCvw2yZ3tOs="/>
+        <field:display field="contactEmail" id="s_org_jaina_education_Partner_contactEmail" object="${partner}" z="BmW3h25r4ygfjJsjc9EfWZasceg="/>
+        <field:display field="contactWebsiteAddress" id="s_org_jaina_education_Partner_contactWebsiteAddress" object="${partner}" z="PM/9yE60smUE8pG7F1h+SupRxYs="/>
+        <field:display field="comments" id="s_org_jaina_education_Partner_comments" object="${partner}" z="YB1jiGEgB8EaPszq/W0/8DZdrbA="/>
+    </page:show>
+</div>

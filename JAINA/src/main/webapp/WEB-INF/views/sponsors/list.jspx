@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_jaina_education_Sponsor" items="${sponsors}" z="VW568T/65JCfPT0oBpl7M0JI/K0=">
+        <table:table data="${sponsors}" id="l_org_jaina_education_Sponsor" path="/sponsors" z="cQXb3hJMs2gSutDF5i5th3qMOhE=">
+            <table:column id="c_org_jaina_education_Sponsor_firstName" property="firstName" z="r5mAa87c2Zo1vJZAgTE2j9zxzfk="/>
+            <table:column id="c_org_jaina_education_Sponsor_lastName" property="lastName" z="ru7kEO+R/zSOInWEAlveRbNvGMk="/>
+            <table:column id="c_org_jaina_education_Sponsor_middleName" property="middleName" z="7xjXnBQKMdzOtTDhNR1AWWvNVbk="/>
+            <table:column id="c_org_jaina_education_Sponsor_address1" property="address1" z="bOEIAiR/hEz4hPCkwbXcwTnwdMA="/>
+            <table:column id="c_org_jaina_education_Sponsor_address2" property="address2" z="mF4nDjXk4LjGWGMk9jq9Kc0hoYE="/>
+            <table:column id="c_org_jaina_education_Sponsor_city" property="city" z="cmTiADJDLbhBRcwOrwunuAGny2s="/>
+        </table:table>
+    </page:list>
+</div>

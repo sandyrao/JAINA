@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_jaina_education_Partner" modelAttribute="partner" path="/partners" versionField="Version" z="JUicw/aBdMF6cf9thak6ZwX/BZ8=">
+        <field:input field="name" id="c_org_jaina_education_Partner_name" z="BTTiiEabD0NIYGXg/+Wp7tM70i0="/>
+        <field:input field="nonProfitId" id="c_org_jaina_education_Partner_nonProfitId" z="joctDbNJz6Cd7ZVP2P178q5M+Eo="/>
+        <field:input field="address1" id="c_org_jaina_education_Partner_address1" z="33GsUSRhb7NSpZfoXu7Q2rcpVy0="/>
+        <field:input field="address2" id="c_org_jaina_education_Partner_address2" z="fcUfqrzWyvieOZ09AV3MEKYYBlc="/>
+        <field:input field="city" id="c_org_jaina_education_Partner_city" z="1jNTCzhXk78vtsS33BBmRX2fYOQ="/>
+        <field:input field="zip" id="c_org_jaina_education_Partner_zip" z="Tl4trjT9BmMHIXQvXV4U+iGQ3KM="/>
+        <field:input field="country" id="c_org_jaina_education_Partner_country" z="UB+5ogDgxRgOSffM7tROIJ3u5Dg="/>
+        <field:input field="phone" id="c_org_jaina_education_Partner_phone" z="2BjWYIxFoZv4EZMkGMll4mRxisE="/>
+        <field:input field="mobile" id="c_org_jaina_education_Partner_mobile" z="EIpvC0W5IUUaq9d7zDVwDzQN/qM="/>
+        <field:input field="fax" id="c_org_jaina_education_Partner_fax" z="YJuLVG6F3KzrVMMgf+Gj54PJ4u4="/>
+        <field:input field="email" id="c_org_jaina_education_Partner_email" validationMessageCode="field_invalid_email" z="TvtzeHjOZPqss3rrUww8/Jni7JM="/>
+        <field:input field="status" id="c_org_jaina_education_Partner_status" z="mec8d5/sIugnxAfEW5VUU+UsgpU="/>
+        <field:input field="contactFirstName" id="c_org_jaina_education_Partner_contactFirstName" z="UwF5e3cK3FCQ/k51dU3BSam5+Q0="/>
+        <field:input field="contactMiddleName" id="c_org_jaina_education_Partner_contactMiddleName" z="1+BSeSba3LZKjNzwT9aa+JktTrs="/>
+        <field:input field="contactLastName" id="c_org_jaina_education_Partner_contactLastName" z="yQfT6biSHfo1IzsqrF1hnpkMI7o="/>
+        <field:input field="contactId" id="c_org_jaina_education_Partner_contactId" z="KBMsWyCh5hUBqnp+H/J0NM5nnu4="/>
+        <field:input field="contactAddress1" id="c_org_jaina_education_Partner_contactAddress1" z="pGMneBjz2fG0SWiOXD5pERE8k70="/>
+        <field:input field="contactAddress2" id="c_org_jaina_education_Partner_contactAddress2" z="++nnMahXaxrtrAi0eE5/+8gRfKI="/>
+        <field:input field="contactCity" id="c_org_jaina_education_Partner_contactCity" z="wQhRz3K8juZeDz4zfm71fCeJ9ws="/>
+        <field:input field="contactZip" id="c_org_jaina_education_Partner_contactZip" z="2oA071L+ns2LgXhsQG2D2poZ9jo="/>
+        <field:input field="contactCountry" id="c_org_jaina_education_Partner_contactCountry" z="U8CYx4ji8DMl1Qe8sKcoLqBKVeI="/>
+        <field:input field="contactPhone" id="c_org_jaina_education_Partner_contactPhone" z="bTBv00V8j2qO2rnuYyqJWxVUhQ8="/>
+        <field:input field="contactMobileNo" id="c_org_jaina_education_Partner_contactMobileNo" z="Smn+jMEOmZYi00SskjVEN3f6Idc="/>
+        <field:input field="contactFax" id="c_org_jaina_education_Partner_contactFax" z="j+PYk4Uoy8f0F1ps15oy17xwwbw="/>
+        <field:input field="contactEmail" id="c_org_jaina_education_Partner_contactEmail" z="Wqjl5mWETQm3kzxQ5OZP2SE40lw="/>
+        <field:input field="contactWebsiteAddress" id="c_org_jaina_education_Partner_contactWebsiteAddress" z="09gMmVeI+v7VKsip95LVq8vTWjI="/>
+        <field:input field="comments" id="c_org_jaina_education_Partner_comments" z="nDkqq5IVlN8qkRF8W5gB6MNl22Y="/>
+    </form:update>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_jaina_education_Student" idField="id_" modelAttribute="student" path="/students" versionField="Version" z="hvrnjLJP5jpdd44HII1cFDz+oLU=">
+        <field:input field="firstName" id="c_org_jaina_education_Student_firstName" max="25" z="m9NDcA90dkxQwZyGRrV9vTsr3Fc="/>
+        <field:input field="lastName" id="c_org_jaina_education_Student_lastName" max="25" z="qEVACoBDi0QJZaU+xZnJu1gbpfI="/>
+        <field:input field="id" id="c_org_jaina_education_Student_id" z="CYSmduGPexZPkyUbz086gBRxuzI="/>
+        <field:input field="middleName" id="c_org_jaina_education_Student_middleName" max="20" z="VUO79diVdL+AKQkj7OVvwbBYTVQ="/>
+        <field:datetime dateTimePattern="${student_dateofbirth_date_format}" field="dateOfBirth" id="c_org_jaina_education_Student_dateOfBirth" z="GhmKF+HNeAH400e+neJBMDsA1mc="/>
+        <field:input field="addressLine1" id="c_org_jaina_education_Student_addressLine1" max="30" z="CVZgVInWT48m1KuLFjQGkCRzdeg="/>
+        <field:input field="addressLine2" id="c_org_jaina_education_Student_addressLine2" max="30" z="Bc5Du4HLTmSJE4Mfz2eZ+rCUweA="/>
+        <field:input field="city" id="c_org_jaina_education_Student_city" max="25" z="NoFU0rIpa2DLafOgoT1gxmCFU/U="/>
+        <field:input field="zipCode" id="c_org_jaina_education_Student_zipCode" z="RFsnEZGnRBrj5xp7xz02oDRIqUM="/>
+        <field:input field="country" id="c_org_jaina_education_Student_country" z="fO17e/8hSDN6oduEJKO0Leue80k="/>
+        <field:input field="phoneNo" id="c_org_jaina_education_Student_phoneNo" z="wOF8k2jKi0BJNlViTLYhzOG8vZE="/>
+        <field:input field="mobNo" id="c_org_jaina_education_Student_mobNo" z="vNLq6YMPgU6+DJfdLjmNf4iSYwY="/>
+        <field:input field="fax" id="c_org_jaina_education_Student_fax" z="Qhjt+2faNw3QDsuEDKkg94C6yvQ="/>
+        <field:input field="email" id="c_org_jaina_education_Student_email" validationMessageCode="field_invalid_email" z="lzy8l/hjW7UWdR2WzrqV7p2cu3A="/>
+        <field:input field="fathersFirstName" id="c_org_jaina_education_Student_fathersFirstName" z="dK9g6FaNymYYOZQFSm9nRqL1Wnc="/>
+        <field:input field="fathersMiddleName" id="c_org_jaina_education_Student_fathersMiddleName" z="43LVijhMooaSyoysaWDyFZ6Y+Q8="/>
+        <field:input field="fathersLastName" id="c_org_jaina_education_Student_fathersLastName" z="Lt179lydqMCWqz7CMUSxxqccBiA="/>
+        <field:input field="studentFileActive" id="c_org_jaina_education_Student_studentFileActive" max="3" z="0F8kSr7Nncjxau0EDIrv+dyyEwQ="/>
+        <field:input field="relationship" id="c_org_jaina_education_Student_relationship" z="Bdal2Msox2ppAJ4/GutFz4kj8T8="/>
+        <field:input field="guardianAddressLine1" id="c_org_jaina_education_Student_guardianAddressLine1" z="vbYb0AMhxuVV+dM7QM6SGLfsYVc="/>
+        <field:input field="guardianAddressLine2" id="c_org_jaina_education_Student_guardianAddressLine2" z="jTllUiv/G7+vX8UsJu05dNCmDg4="/>
+        <field:simple field="Sponsor" id="c_org_jaina_education_Student_Sponsor" messageCode="entity_reference_not_managed" messageCodeAttribute="Sponsor" z="a1ghFuIOS1HdcuHP5nGad4Emosk="/>
+    </form:update>
+</div>

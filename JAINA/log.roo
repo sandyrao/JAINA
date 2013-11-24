@@ -1,0 +1,190 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-09 12:52:31
+project --topLevelPackage org.jaina.education --projectName JAINA --java 6 --packaging WAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-09 12:52:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-09 13:23:59
+hint
+jpa setup --provider HIBERNATE --database MYSQL 
+hint
+entity jpa --class org.jaina.education.Student --table STUDENT 
+hint
+field string --fieldName firstName --column FIRST_NAME --sizeMax 25
+field string --fieldName lastName --column LAST_NAME --sizeMax 25
+field number --fieldName id --column STUDENT_ID --type long
+field string --fieldName middleName --column MIDDLE_NAME --sizeMax 20
+field date --fieldName dateOfBirth --type java.util.Date --column DATE_OF_BIRTH 
+field string --fieldName addressLine1 --column ADDRESS_LINE1 --sizeMax 30
+field string --fieldName addressLine2 --column ADDRESS_LINE2 --sizeMax 30
+field string --fieldName city --column CITY --sizeMax 25
+field number --fieldName zipCode --column ZIP_CODE --type int
+field string --fieldName country --column COUNTRY 
+field string --fieldName phoneNo --column PHONE_NO
+field string --fieldName mobNo --column MOB_NO
+field string --fieldName fax --column FAX
+field string --fieldName email --column EMAIL
+field string --fieldName  fathersFirstName --column FATHERS_FIRST_NAME
+field string --fieldName  fathersMiddleName --column FATHERS_MIDDLE_NAME
+field string --fieldName  fathersLastName --column FATHERS_LAST_NAME
+field string --fieldName studentFileActive --column STUDENT_FILE_ACTIVE --sizeMax 3
+field string --fieldName relationship --column RELATIONSHIP
+field string --fieldName guardianAddressLine1 --column GUARDIAN_ADDR_LINE1
+field string --fieldName guardianAddressLine2 --column GUARDIAN_ADDR_LINE2
+hint
+entity jpa --class ~.Sponsor --identifierColumn ID --identifierField id --entityName Sponsor --table SPONSOR 
+hint dependancy
+hint
+help
+field reference --fieldName Student --type ~.Student
+field set --fieldName Sponsor --type ~.Sponsor --class ~.Student --cardinality ONE_TO_MANY 
+hint
+hint web mvc
+hint web mvc json
+hint web mvc 
+web mvc setup 
+web mvc scaffold --class ~.web.StudentController --backingType ~.Student 
+web mvc scaffold --class ~.web.SponsorController --backingType ~.Sponsor
+hint
+hint finders
+finder list 
+hint logger
+hint logging
+logging setup --level DEBUG --package PERSISTENCE 
+hint
+perform package 
+ hint
+help
+hint maven
+hint eclipse
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-09 19:33:37
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-09 19:34:36
+perform eclipse
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-09 20:09:29
+hint
+help
+// [failed] database reverse engineer --schema test
+addon list 
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id 39
+database reverse engineer --schema test
+hint database
+hint database reverse 
+help database
+database reverse engineer --schema test
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-09 21:47:36
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-18 12:00:11
+hint
+hint fields
+field string --class ~.Sponsor --fieldName firstName --column FIRST_NAME 
+field string --class ~.Sponsor --fieldName lastName --column LAST_NAME 
+field number --class ~.Sponsor --fieldName id --type long --column ID
+field string --class ~.Sponsor --fieldName middleName --column MIDDLE_NAME 
+field string --class ~.Sponsor --fieldName AddressLine1 --column ADDRESS_LINE1
+field string --class ~.Sponsor --fieldName AddressLine2 --column ADDRESS_LINE2
+field string --class ~.Sponsor --fieldName city --column CITY
+// [failed] field string --class ~.Sponsor --fieldName state --column STATE
+// [failed] field string --class ~.Sponsor --fieldName state --column STATE__NAME
+field string --class ~.Sponsor --fieldName stateName --column STATE__NAME
+field string --class ~.Sponsor --fieldName zipCode --column ZIP_CODE
+field string --class ~.Sponsor --fieldName country --column COUNTRY
+field string --class ~.Sponsor --fieldName phoneNo1 --column PHONE_NO1
+field string --class ~.Sponsor --fieldName mobileNo --column MOB_NO
+field string --class ~.Sponsor --fieldName fax --column FAX
+field string --class ~.Sponsor --fieldName email --column EMAIL
+field date --fieldName startYear --type java.util.Calendar --column START_YEAR
+field string --class ~.Sponsor --fieldName  annualAmount --column ANNUAL_AMOUNT
+field string --class ~.Sponsor --fieldName  aggregatedAmount --column AGGREGATED_AMOUNT
+// [failed] field number --class ~.Sponsor --fieldName aggregatedAmount --column AGGREGATED_AMOUNT --type long
+hint delete
+hint 
+field string --class ~.Sponsor --fieldName  status --column STATUS
+field number --class ~.Sponsor --fieldName nonProfitId --column NON_PROFIT_ID --type long
+field string --class ~.Sponsor --fieldName  charityName --column CHARITY_NAME 
+field string --class ~.Sponsor --fieldName  likedInAddress --column LINKEDIN_ADDRESS
+field date --class ~.Sponsor --fieldName lastCommunicated --column LAST_COMMUNICATED --type java.util.Date
+field string --class ~.Sponsor --fieldName  paymentProfile --column PAYMENT_PROFILE
+field string --class ~.Sponsor --fieldName  comments --column COMMENTS
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-18 14:09:58
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-23 11:56:46
+hint
+hint entity
+hint entities
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-23 14:53:27
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-23 14:59:30
+hint
+hint topics
+hint general
+help
+hint security
+security setup
+hint
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-23 15:06:22
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-23 15:12:26
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-23 15:14:10
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-23 20:38:45
+hint entity
+hint entities
+entity jpa --class ~.Partner --table PARTNER 
+hint
+hint fields
+field string --fieldName name --column PARTNER_NAME  
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-11-24 03:48:00
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-11-24 22:48:35
+field string --class ~.Partner --fieldName nonProfitId --column NON_PROFIT_ID 
+field string --class ~.Partner --fieldName address1 --column ADDRESS_1
+field string --class ~.Partner --fieldName address2 --column ADDRESS_2
+field string --class ~.Partner --fieldName city --column CITY
+field string --class ~.Partner --fieldName zip --column ZIP
+field string --class ~.Partner --fieldName country --column COUNTRY
+field string --class ~.Partner --fieldName phone --column PHONE
+field string --class ~.Partner --fieldName mobile --column MOBILE
+field string --class ~.Partner --fieldName fax --column FAX
+field string --class ~.Partner --fieldName email --column EMAIL
+field string --class ~.Partner --fieldName status --column STATUS
+field string --class ~.Partner --fieldName contactFirstName --column CONTACT_FIRST_NAME
+field string --class ~.Partner --fieldName contactMiddleName --column CONTACT_MIDDLE_NAME
+field string --class ~.Partner --fieldName contactLastName --column CONTACT_LAST_NAME
+field string --class ~.Partner --fieldName contactId --column CONTACT_ID
+field string --class ~.Partner --fieldName contactAddress1 --column CONTACT_ADDRESS_!
+field string --class ~.Partner --fieldName contactAddress2 --column CONTACT_ADDRESS_2
+field string --class ~.Partner --fieldName contactCity --column CONTACT_CITY
+field string --class ~.Partner --fieldName contactZip --column CONTACT_ZIP
+field string --class ~.Partner --fieldName contactCountry --column CONTACT_COUNTRY
+field string --class ~.Partner --fieldName contactPhone --column CONTACT_PHONE
+field string --class ~.Partner --fieldName contactMobileNo --column CONTACT_MOBILE
+field string --class ~.Partner --fieldName contactFax --column CONTACT_FAX
+field string --class ~.Partner --fieldName contactEmail --column CONTACT_EMAIL
+field string --class ~.Partner --fieldName contactWebsiteAddress --column CONTACT_WEBSITE
+field string --class ~.Partner --fieldName comments --column COMMENTS
+hint
+web mvc all --package org.jaina.education.web 
+web mvc controller --class ~.Sponsor 
+web mvc controller --class ~.web.SponsorController
+entity jpa --class ~.Sponsor --table SPONSOR
+field string --fieldName firstName --column FIRST_NAME
+hint
+hint entities
+field string --fieldName middleName --column MIDDLE_NAME
+field string --fieldName lastName --column LAST_NAME
+field string --fieldName address1 --column ADDRESS1
+field string --fieldName address2  --column ADDRESS2
+field string --fieldName city --column CITY
+// [failed] field string --fieldName state --column STATE
+field string --fieldName zip --column ZIP
+field string --fieldName country --column COUNTRY
+field string --fieldName phoneNumber --column PHONE
+field string --fieldName mobileNumber --column MOBILE
+field string --fieldName fax --column FAX
+field string --fieldName email --column EMAIL
+field date --fieldName startYear --column START_YEAR --type java.util.Calendar
+field number --fieldName annualAmount --column ANNUAL_AMOUNT --type long
+field number --fieldName aggregatedlAmount --column AGGR_AMOUNT --type long
+field string --fieldName status --column  STATUS
+field string --fieldName nonProfitId --column  NON_PROFIT_ID
+field string --fieldName linkedinAddress --column  LINKEDIN_ADDRESS
+field string --fieldName charityName --column  CHARITY_NAME
+field date --fieldName lastCommunicated --column LAST_COMMUNICATED --type java.util.Date
+field string --fieldName paymentProfile --column PAYMENT_PROFILE 
+field string --fieldName comments --column COMMENTS
+web mvc controller --class ~.web.SponsorController
+web mvc all --package org.jaina.education.web

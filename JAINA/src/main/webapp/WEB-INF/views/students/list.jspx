@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_jaina_education_Student" items="${students}" z="ncNM9O9t/AYco4/qLadgM9X7YwQ=">
+        <table:table data="${students}" id="l_org_jaina_education_Student" path="/students" typeIdFieldName="id_" z="+RllDvFTrU6S8DWbrotniezWd2g=">
+            <table:column id="c_org_jaina_education_Student_firstName" property="firstName" z="nEHWFwdNu1N9M8nbWE9t4kZvLDE="/>
+            <table:column id="c_org_jaina_education_Student_lastName" property="lastName" z="bK9yaZulAGmFrAOWLnPuAXxwNwE="/>
+            <table:column id="c_org_jaina_education_Student_id" property="id" z="tlNRdMn+WxP64SGjxI0neqBHciM="/>
+            <table:column id="c_org_jaina_education_Student_middleName" property="middleName" z="dBtDn2rBh3IzhbZuQL/lOVSHyyI="/>
+            <table:column date="true" dateTimePattern="${student_dateofbirth_date_format}" id="c_org_jaina_education_Student_dateOfBirth" property="dateOfBirth" z="hH+f5JfcpmagTcMYPgXuX8k7ABY="/>
+            <table:column id="c_org_jaina_education_Student_addressLine1" property="addressLine1" z="AGOJTDUbH7lXVsviMfNekP1Bsu8="/>
+        </table:table>
+    </page:list>
+</div>

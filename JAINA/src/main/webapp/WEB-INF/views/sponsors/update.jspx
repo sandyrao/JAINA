@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_jaina_education_Sponsor" modelAttribute="sponsor" path="/sponsors" versionField="Version" z="h7W1kHe9D4GJIyLsqDt0fHXzkls=">
+        <field:input field="firstName" id="c_org_jaina_education_Sponsor_firstName" z="Lov8o9+rvl9yE36xm28bgMRJD+I="/>
+        <field:input field="lastName" id="c_org_jaina_education_Sponsor_lastName" z="KHsdxzbRgNUAY+aiosPj/nD1XMg="/>
+        <field:input field="middleName" id="c_org_jaina_education_Sponsor_middleName" z="LSG4QJOu2SJAHufj6qmmywklDIM="/>
+        <field:input field="city" id="c_org_jaina_education_Sponsor_city" z="RMmzp55Wl6cw3PhjSEmIKrHShHw="/>
+        <field:input field="country" id="c_org_jaina_education_Sponsor_country" z="/jqeB0AyHSempSfbURtDqPCsUew="/>
+        <field:input field="fax" id="c_org_jaina_education_Sponsor_fax" z="y6xW3LGCfNCzkQuM3lGaCphVSQc="/>
+        <field:input field="email" id="c_org_jaina_education_Sponsor_email" validationMessageCode="field_invalid_email" z="zZUR7H4HOMjyAUrdZ/6MSs8nOVU="/>
+        <field:datetime dateTimePattern="${sponsor_startyear_date_format}" field="startYear" id="c_org_jaina_education_Sponsor_startYear" z="Omozvm4My79uHA1NoTDv6uP2k5I="/>
+        <field:input field="annualAmount" id="c_org_jaina_education_Sponsor_annualAmount" z="XWu0U/1wCacV8Wnvjrn72wyFf38="/>
+        <field:input field="status" id="c_org_jaina_education_Sponsor_status" z="btBG5G2vkvo0c5ZRTYPTK/2Mwnc="/>
+        <field:input field="nonProfitId" id="c_org_jaina_education_Sponsor_nonProfitId" z="WgfnyeCjdfALiqI7kYExry1VZ6o="/>
+        <field:input field="charityName" id="c_org_jaina_education_Sponsor_charityName" z="LuMla4ihD2woEpGhDQWlg/niNPk="/>
+        <field:datetime dateTimePattern="${sponsor_lastcommunicated_date_format}" field="lastCommunicated" id="c_org_jaina_education_Sponsor_lastCommunicated" z="qESJSuPWIeqOOIkMu2Y5ZQ49XrQ="/>
+        <field:input field="paymentProfile" id="c_org_jaina_education_Sponsor_paymentProfile" z="xcuEFbwZV7ws6SdvFzNLgrpaJg8="/>
+        <field:input field="comments" id="c_org_jaina_education_Sponsor_comments" z="GAdNOBsnjf5fS8FAPlbcWfY/aRs="/>
+        <field:input field="address1" id="c_org_jaina_education_Sponsor_address1" z="NbccPMdXyO8b/PLpkKftW100cXY="/>
+        <field:input field="address2" id="c_org_jaina_education_Sponsor_address2" z="uk3NBh/5cdnGitujXt0d5YFJMvg="/>
+        <field:input field="zip" id="c_org_jaina_education_Sponsor_zip" z="BG/u8Cn+Rv7F5U0AprF80Lwi2jg="/>
+        <field:input field="phoneNumber" id="c_org_jaina_education_Sponsor_phoneNumber" z="qCqkg1bD//xy8yzArVjO+cIxkPY="/>
+        <field:input field="mobileNumber" id="c_org_jaina_education_Sponsor_mobileNumber" z="KwvOZGXaTKQmt7js13yogIe2w3s="/>
+        <field:input field="aggregatedlAmount" id="c_org_jaina_education_Sponsor_aggregatedlAmount" z="lds0x2p2AxlDniK/RTOnwQTrnlA="/>
+        <field:input field="linkedinAddress" id="c_org_jaina_education_Sponsor_linkedinAddress" z="lPtJASoFiuONCLcRBOH7Z0CsgBU="/>
+    </form:update>
+</div>
