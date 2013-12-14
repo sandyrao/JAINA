@@ -7,6 +7,7 @@ import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.jaina.education.Partner;
+import org.jaina.education.Student;
 import org.jaina.education.web.PartnerController;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -86,6 +87,7 @@ privileged aspect PartnerController_Roo_Controller {
     
     void PartnerController.populateEditForm(Model uiModel, Partner partner) {
         uiModel.addAttribute("partner", partner);
+        uiModel.addAttribute("students", Student.findAllStudents());
     }
     
     String PartnerController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -13,4 +13,7 @@
 <definition extends="default" name="sponsors/update">
         <put-attribute name="body" value="/WEB-INF/views/sponsors/update.jspx"/>
     </definition>
+<definition extends="default" name="sponsors/index">
+        <put-attribute name="body" value="/WEB-INF/views/sponsors/index.jspx"/>
+    </definition>
 </tiles-definitions>

@@ -2,7 +2,11 @@ package org.jaina.education;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -84,4 +88,7 @@ public class Sponsor {
 
     @Column(name = "COMMENTS")
     private String comments;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sponsor")
+    private Set<Student> Students = new HashSet<Student>();
 }

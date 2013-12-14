@@ -1,6 +1,10 @@
 package org.jaina.education;
 
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.OneToMany;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -90,4 +94,7 @@ public class Partner {
 
     @Column(name = "COMMENTS")
     private String comments;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "partner")
+    private Set<Student> Students = new HashSet<Student>();
 }

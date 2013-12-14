@@ -28,9 +28,9 @@ privileged aspect Student_Roo_Jpa_ActiveRecord {
         return entityManager().createQuery("SELECT o FROM Student o", Student.class).getResultList();
     }
     
-    public static Student Student.findStudent(Long id_) {
-        if (id_ == null) return null;
-        return entityManager().find(Student.class, id_);
+    public static Student Student.findStudent(Long id) {
+        if (id == null) return null;
+        return entityManager().find(Student.class, id);
     }
     
     public static List<Student> Student.findStudentEntries(int firstResult, int maxResults) {
@@ -49,7 +49,7 @@ privileged aspect Student_Roo_Jpa_ActiveRecord {
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            Student attached = Student.findStudent(this.id_);
+            Student attached = Student.findStudent(this.id);
             this.entityManager.remove(attached);
         }
     }

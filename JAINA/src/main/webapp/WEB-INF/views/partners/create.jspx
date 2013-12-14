@@ -30,6 +30,7 @@
         <field:input field="contactEmail" id="c_org_jaina_education_Partner_contactEmail" z="Wqjl5mWETQm3kzxQ5OZP2SE40lw="/>
         <field:input field="contactWebsiteAddress" id="c_org_jaina_education_Partner_contactWebsiteAddress" z="09gMmVeI+v7VKsip95LVq8vTWjI="/>
         <field:input field="comments" id="c_org_jaina_education_Partner_comments" z="nDkqq5IVlN8qkRF8W5gB6MNl22Y="/>
+        <field:simple field="Students" id="c_org_jaina_education_Partner_Students" messageCode="entity_reference_not_managed" messageCodeAttribute="Student" z="QOfHYsSoSdokzHZtyH4UOoYHgeo="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_org_jaina_education_Partner" render="${not empty dependencies}" z="apnXECoPBRhwebpSDDVmy/CDhVo="/>
 </div>

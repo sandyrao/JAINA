@@ -5,7 +5,6 @@
     <page:show id="ps_org_jaina_education_Student" object="${student}" path="/students" z="9v5sOHBayokaHa0VbHAs9REAkwM=">
         <field:display field="firstName" id="s_org_jaina_education_Student_firstName" object="${student}" z="HvXE75Bgp4SEaIB/1M75UXjBSeg="/>
         <field:display field="lastName" id="s_org_jaina_education_Student_lastName" object="${student}" z="tkdudPNyrRtqj8Iaf9rc1MjGqvU="/>
-        <field:display field="id" id="s_org_jaina_education_Student_id" object="${student}" z="UxeJ9NrEpeifPMxGk6J6qU706D8="/>
         <field:display field="middleName" id="s_org_jaina_education_Student_middleName" object="${student}" z="VwHAjT0NqFVMPuZqPZ03OpSUJj0="/>
         <field:display date="true" dateTimePattern="${student_dateofbirth_date_format}" field="dateOfBirth" id="s_org_jaina_education_Student_dateOfBirth" object="${student}" z="7LDNm3uFj3u3KDaD52AglVagK1k="/>
         <field:display field="addressLine1" id="s_org_jaina_education_Student_addressLine1" object="${student}" z="C46bAhm4HF9FqXDvNBXOHqB/g+E="/>
@@ -24,6 +23,7 @@
         <field:display field="relationship" id="s_org_jaina_education_Student_relationship" object="${student}" z="E+bNaPOfBNlR2NkKebzFV58Zh10="/>
         <field:display field="guardianAddressLine1" id="s_org_jaina_education_Student_guardianAddressLine1" object="${student}" z="gBUvyeIYpOJ7cbvBh+eghWvPZFw="/>
         <field:display field="guardianAddressLine2" id="s_org_jaina_education_Student_guardianAddressLine2" object="${student}" z="4mTWpBbd1ysxlOjs5KleWDt6sZs="/>
-        <field:display field="sponsor" id="s_org_jaina_education_Student_Sponsor" object="${student}" z="4RTGhJQJv6jnqo2CI3PVD9hPKPY="/>
+        <field:display field="sponsor" id="s_org_jaina_education_Student_sponsor" object="${student}" z="OeSKtpdk8hEBfkibxX3OZYXJzkk="/>
+        <field:display field="partner" id="s_org_jaina_education_Student_partner" object="${student}" z="i+gBngtrhwCxuMyGS9MUscI6yLs="/>
     </page:show>
 </div>

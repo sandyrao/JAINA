@@ -3,7 +3,9 @@
 
 package org.jaina.education;
 
+import java.util.Set;
 import org.jaina.education.Partner;
+import org.jaina.education.Student;
 
 privileged aspect Partner_Roo_JavaBean {
     
@@ -221,6 +223,14 @@ privileged aspect Partner_Roo_JavaBean {
     
     public void Partner.setComments(String comments) {
         this.comments = comments;
+    }
+    
+    public Set<Student> Partner.getStudents() {
+        return this.Students;
+    }
+    
+    public void Partner.setStudents(Set<Student> Students) {
+        this.Students = Students;
     }
     
 }

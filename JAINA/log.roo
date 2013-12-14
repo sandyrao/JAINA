@@ -189,3 +189,19 @@ field string --fieldName comments --column COMMENTS
 web mvc controller --class ~.web.SponsorController
 web mvc all --package org.jaina.education.web
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-14 19:39:37
+// [failed] field reference --class ~.Student --type ~.Sponsor --fieldName Sponsor --cardinality MANY_TO_ONE 
+field set --fieldName Students --type ~.Student --class ~.Sponsor --cardinality ONE_TO_MANY --mappedBy Sponsor
+hint
+hint web mvc
+help web mvc
+help web mvc controller
+web mvc controller --class ~.web.SponsorsController 
+hint web mvc controller 
+help web mvc controller
+hint web mvc
+web mvc controller --class ~.web.SponsorController 
+web mvc all --package org.jaina.education.web 
+hint jpa
+// [failed] field set --fieldName Students --type ~.Student --class ~.Partner --cardinality MANY_TO_ONE --mappedBy partner
+field set --fieldName Students --type ~.Student --class ~.Partner --cardinality ONE_TO_MANY --mappedBy partner
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-14 20:48:51

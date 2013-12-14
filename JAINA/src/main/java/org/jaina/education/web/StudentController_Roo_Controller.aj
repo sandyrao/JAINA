@@ -6,6 +6,7 @@ package org.jaina.education.web;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.jaina.education.Partner;
 import org.jaina.education.Sponsor;
 import org.jaina.education.Student;
 import org.jaina.education.web.StudentController;
@@ -30,7 +31,7 @@ privileged aspect StudentController_Roo_Controller {
         }
         uiModel.asMap().clear();
         student.persist();
-        return "redirect:/students/" + encodeUrlPathSegment(student.getId_().toString(), httpServletRequest);
+        return "redirect:/students/" + encodeUrlPathSegment(student.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(params = "form", produces = "text/html")
@@ -39,11 +40,11 @@ privileged aspect StudentController_Roo_Controller {
         return "students/create";
     }
     
-    @RequestMapping(value = "/{id_}", produces = "text/html")
-    public String StudentController.show(@PathVariable("id_") Long id_, Model uiModel) {
+    @RequestMapping(value = "/{id}", produces = "text/html")
+    public String StudentController.show(@PathVariable("id") Long id, Model uiModel) {
         addDateTimeFormatPatterns(uiModel);
-        uiModel.addAttribute("student", Student.findStudent(id_));
-        uiModel.addAttribute("itemId", id_);
+        uiModel.addAttribute("student", Student.findStudent(id));
+        uiModel.addAttribute("itemId", id);
         return "students/show";
     }
     
@@ -70,18 +71,18 @@ privileged aspect StudentController_Roo_Controller {
         }
         uiModel.asMap().clear();
         student.merge();
-        return "redirect:/students/" + encodeUrlPathSegment(student.getId_().toString(), httpServletRequest);
+        return "redirect:/students/" + encodeUrlPathSegment(student.getId().toString(), httpServletRequest);
     }
     
-    @RequestMapping(value = "/{id_}", params = "form", produces = "text/html")
-    public String StudentController.updateForm(@PathVariable("id_") Long id_, Model uiModel) {
-        populateEditForm(uiModel, Student.findStudent(id_));
+    @RequestMapping(value = "/{id}", params = "form", produces = "text/html")
+    public String StudentController.updateForm(@PathVariable("id") Long id, Model uiModel) {
+        populateEditForm(uiModel, Student.findStudent(id));
         return "students/update";
     }
     
-    @RequestMapping(value = "/{id_}", method = RequestMethod.DELETE, produces = "text/html")
-    public String StudentController.delete(@PathVariable("id_") Long id_, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
-        Student student = Student.findStudent(id_);
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = "text/html")
+    public String StudentController.delete(@PathVariable("id") Long id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+        Student student = Student.findStudent(id);
         student.remove();
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
@@ -96,6 +97,7 @@ privileged aspect StudentController_Roo_Controller {
     void StudentController.populateEditForm(Model uiModel, Student student) {
         uiModel.addAttribute("student", student);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("partners", Partner.findAllPartners());
         uiModel.addAttribute("sponsors", Sponsor.findAllSponsors());
     }
     

@@ -4,7 +4,7 @@
 package org.jaina.education;
 
 import java.util.Date;
-import java.util.Set;
+import org.jaina.education.Partner;
 import org.jaina.education.Sponsor;
 import org.jaina.education.Student;
 
@@ -24,14 +24,6 @@ privileged aspect Student_Roo_JavaBean {
     
     public void Student.setLastName(String lastName) {
         this.lastName = lastName;
-    }
-    
-    public long Student.getId() {
-        return this.id;
-    }
-    
-    public void Student.setId(long id) {
-        this.id = id;
     }
     
     public String Student.getMiddleName() {
@@ -178,12 +170,20 @@ privileged aspect Student_Roo_JavaBean {
         this.guardianAddressLine2 = guardianAddressLine2;
     }
     
-    public Set<Sponsor> Student.getSponsor() {
-        return this.Sponsor;
+    public Sponsor Student.getSponsor() {
+        return this.sponsor;
     }
     
-    public void Student.setSponsor(Set<Sponsor> Sponsor) {
-        this.Sponsor = Sponsor;
+    public void Student.setSponsor(Sponsor sponsor) {
+        this.sponsor = sponsor;
+    }
+    
+    public Partner Student.getPartner() {
+        return this.partner;
+    }
+    
+    public void Student.setPartner(Partner partner) {
+        this.partner = partner;
     }
     
 }

@@ -2,10 +2,9 @@
 <div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_org_jaina_education_Student" idField="id_" modelAttribute="student" path="/students" versionField="Version" z="hvrnjLJP5jpdd44HII1cFDz+oLU=">
+    <form:update id="fu_org_jaina_education_Student" modelAttribute="student" path="/students" versionField="Version" z="/fTfuqgqWPdBB2S+iWTc9y1hVUI=">
         <field:input field="firstName" id="c_org_jaina_education_Student_firstName" max="25" z="m9NDcA90dkxQwZyGRrV9vTsr3Fc="/>
         <field:input field="lastName" id="c_org_jaina_education_Student_lastName" max="25" z="qEVACoBDi0QJZaU+xZnJu1gbpfI="/>
-        <field:input field="id" id="c_org_jaina_education_Student_id" z="CYSmduGPexZPkyUbz086gBRxuzI="/>
         <field:input field="middleName" id="c_org_jaina_education_Student_middleName" max="20" z="VUO79diVdL+AKQkj7OVvwbBYTVQ="/>
         <field:datetime dateTimePattern="${student_dateofbirth_date_format}" field="dateOfBirth" id="c_org_jaina_education_Student_dateOfBirth" z="GhmKF+HNeAH400e+neJBMDsA1mc="/>
         <field:input field="addressLine1" id="c_org_jaina_education_Student_addressLine1" max="30" z="CVZgVInWT48m1KuLFjQGkCRzdeg="/>
@@ -24,6 +23,7 @@
         <field:input field="relationship" id="c_org_jaina_education_Student_relationship" z="Bdal2Msox2ppAJ4/GutFz4kj8T8="/>
         <field:input field="guardianAddressLine1" id="c_org_jaina_education_Student_guardianAddressLine1" z="vbYb0AMhxuVV+dM7QM6SGLfsYVc="/>
         <field:input field="guardianAddressLine2" id="c_org_jaina_education_Student_guardianAddressLine2" z="jTllUiv/G7+vX8UsJu05dNCmDg4="/>
-        <field:select field="Sponsor" id="c_org_jaina_education_Student_Sponsor" itemValue="id" items="${sponsors}" multiple="true" path="/sponsors" z="8+RvBpanMApLthxRIZI58L+98/A="/>
+        <field:select field="sponsor" id="c_org_jaina_education_Student_sponsor" itemValue="id" items="${sponsors}" path="/sponsors" z="iQUMkFCNn9rvsElL2PxJnYdJtfk="/>
+        <field:select field="partner" id="c_org_jaina_education_Student_partner" itemValue="id" items="${partners}" path="/partners" z="QYkWpxmgyX95B1KggJk6noxkH/A="/>
     </form:update>
 </div>

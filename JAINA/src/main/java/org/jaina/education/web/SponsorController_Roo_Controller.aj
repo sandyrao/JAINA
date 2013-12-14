@@ -7,6 +7,7 @@ import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.jaina.education.Sponsor;
+import org.jaina.education.Student;
 import org.jaina.education.web.SponsorController;
 import org.joda.time.format.DateTimeFormat;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -96,6 +97,7 @@ privileged aspect SponsorController_Roo_Controller {
     void SponsorController.populateEditForm(Model uiModel, Sponsor sponsor) {
         uiModel.addAttribute("sponsor", sponsor);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("students", Student.findAllStudents());
     }
     
     String SponsorController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

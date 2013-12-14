@@ -6,6 +6,7 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -27,9 +28,6 @@ public class Student {
     @Column(name = "LAST_NAME")
     @Size(max = 25)
     private String lastName;
-
-    @Column(name = "STUDENT_ID")
-    private long id;
 
     @Column(name = "MIDDLE_NAME")
     @Size(max = 20)
@@ -92,6 +90,9 @@ public class Student {
     @Column(name = "GUARDIAN_ADDR_LINE2")
     private String guardianAddressLine2;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Sponsor> Sponsor = new HashSet<Sponsor>();
+    @ManyToOne
+    private Sponsor sponsor= new Sponsor();
+    
+    @ManyToOne
+    private Partner partner= new Partner();
 }

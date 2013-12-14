@@ -25,6 +25,7 @@
         <field:input field="mobileNumber" id="c_org_jaina_education_Sponsor_mobileNumber" z="KwvOZGXaTKQmt7js13yogIe2w3s="/>
         <field:input field="aggregatedlAmount" id="c_org_jaina_education_Sponsor_aggregatedlAmount" z="lds0x2p2AxlDniK/RTOnwQTrnlA="/>
         <field:input field="linkedinAddress" id="c_org_jaina_education_Sponsor_linkedinAddress" z="lPtJASoFiuONCLcRBOH7Z0CsgBU="/>
+        <field:simple field="Students" id="c_org_jaina_education_Sponsor_Students" messageCode="entity_reference_not_managed" messageCodeAttribute="Student" z="MmxeQMFRGwDq4L7rEWRb2ynLRhs="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_org_jaina_education_Sponsor" render="${not empty dependencies}" z="swU0WkneLDyIKS9iG4U37/A3G5E="/>
 </div>

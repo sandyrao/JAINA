@@ -5,7 +5,9 @@ package org.jaina.education;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Set;
 import org.jaina.education.Sponsor;
+import org.jaina.education.Student;
 
 privileged aspect Sponsor_Roo_JavaBean {
     
@@ -183,6 +185,14 @@ privileged aspect Sponsor_Roo_JavaBean {
     
     public void Sponsor.setComments(String comments) {
         this.comments = comments;
+    }
+    
+    public Set<Student> Sponsor.getStudents() {
+        return this.Students;
+    }
+    
+    public void Sponsor.setStudents(Set<Student> Students) {
+        this.Students = Students;
     }
     
 }
