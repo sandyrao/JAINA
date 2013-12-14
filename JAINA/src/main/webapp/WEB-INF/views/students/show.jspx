@@ -24,5 +24,6 @@
         <field:display field="relationship" id="s_org_jaina_education_Student_relationship" object="${student}" z="E+bNaPOfBNlR2NkKebzFV58Zh10="/>
         <field:display field="guardianAddressLine1" id="s_org_jaina_education_Student_guardianAddressLine1" object="${student}" z="gBUvyeIYpOJ7cbvBh+eghWvPZFw="/>
         <field:display field="guardianAddressLine2" id="s_org_jaina_education_Student_guardianAddressLine2" object="${student}" z="4mTWpBbd1ysxlOjs5KleWDt6sZs="/>
+        <field:display field="sponsor" id="s_org_jaina_education_Student_Sponsor" object="${student}" z="4RTGhJQJv6jnqo2CI3PVD9hPKPY="/>
     </page:show>
 </div>

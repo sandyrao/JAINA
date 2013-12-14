@@ -188,3 +188,4 @@ field string --fieldName paymentProfile --column PAYMENT_PROFILE
 field string --fieldName comments --column COMMENTS
 web mvc controller --class ~.web.SponsorController
 web mvc all --package org.jaina.education.web
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-14 19:39:37

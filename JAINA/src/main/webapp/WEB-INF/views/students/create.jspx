@@ -24,7 +24,7 @@
         <field:input field="relationship" id="c_org_jaina_education_Student_relationship" z="Bdal2Msox2ppAJ4/GutFz4kj8T8="/>
         <field:input field="guardianAddressLine1" id="c_org_jaina_education_Student_guardianAddressLine1" z="vbYb0AMhxuVV+dM7QM6SGLfsYVc="/>
         <field:input field="guardianAddressLine2" id="c_org_jaina_education_Student_guardianAddressLine2" z="jTllUiv/G7+vX8UsJu05dNCmDg4="/>
-        <field:simple field="Sponsor" id="c_org_jaina_education_Student_Sponsor" messageCode="entity_reference_not_managed" messageCodeAttribute="Sponsor" z="a1ghFuIOS1HdcuHP5nGad4Emosk="/>
+        <field:select field="Sponsor" id="c_org_jaina_education_Student_Sponsor" itemValue="id" items="${sponsors}" multiple="true" path="/sponsors" z="8+RvBpanMApLthxRIZI58L+98/A="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_org_jaina_education_Student" render="${not empty dependencies}" z="sipPTETtm9/Gv0QAAmAMdhmoduI="/>
 </div>
