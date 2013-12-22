@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -89,6 +90,6 @@ public class Sponsor {
     @Column(name = "COMMENTS")
     private String comments;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sponsor")
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "sponsors")
     private Set<Student> Students = new HashSet<Student>();
 }

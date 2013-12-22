@@ -5,7 +5,6 @@ package org.jaina.education.web;
 
 import org.jaina.education.Partner;
 import org.jaina.education.Sponsor;
-import org.jaina.education.Student;
 import org.jaina.education.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -63,30 +62,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
-    public Converter<Student, String> ApplicationConversionServiceFactoryBean.getStudentToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<org.jaina.education.Student, java.lang.String>() {
-            public String convert(Student student) {
-                return new StringBuilder().append(student.getFirstName()).append(' ').append(student.getLastName()).append(' ').append(student.getMiddleName()).append(' ').append(student.getDateOfBirth()).toString();
-            }
-        };
-    }
-    
-    public Converter<Long, Student> ApplicationConversionServiceFactoryBean.getIdToStudentConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, org.jaina.education.Student>() {
-            public org.jaina.education.Student convert(java.lang.Long id) {
-                return Student.findStudent(id);
-            }
-        };
-    }
-    
-    public Converter<String, Student> ApplicationConversionServiceFactoryBean.getStringToStudentConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, org.jaina.education.Student>() {
-            public org.jaina.education.Student convert(String id) {
-                return getObject().convert(getObject().convert(id, Long.class), Student.class);
-            }
-        };
-    }
-    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(getPartnerToStringConverter());
         registry.addConverter(getIdToPartnerConverter());
@@ -94,9 +69,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getSponsorToStringConverter());
         registry.addConverter(getIdToSponsorConverter());
         registry.addConverter(getStringToSponsorConverter());
-        registry.addConverter(getStudentToStringConverter());
-        registry.addConverter(getIdToStudentConverter());
-        registry.addConverter(getStringToStudentConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

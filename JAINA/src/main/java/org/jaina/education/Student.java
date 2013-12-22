@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -90,9 +92,17 @@ public class Student {
     @Column(name = "GUARDIAN_ADDR_LINE2")
     private String guardianAddressLine2;
 
-    @ManyToOne
-    private Sponsor sponsor= new Sponsor();
+    @ManyToMany 
+    @JoinTable(name="STUDENT_SPONSOR",
+    joinColumns=  @JoinColumn(name="STUDENT_ID", referencedColumnName="ID"),
+    inverseJoinColumns= @JoinColumn(name="SPONSOR_ID", referencedColumnName="ID")
+    )
+    private Set<Sponsor> sponsors= new HashSet<Sponsor>();
     
-    @ManyToOne
-    private Partner partner= new Partner();
+    @ManyToMany
+    @JoinTable(name="STUDENT_PARTNER",
+	    joinColumns=  @JoinColumn(name="STUDENT_ID", referencedColumnName="ID"),
+	    inverseJoinColumns= @JoinColumn(name="PARTNER_ID", referencedColumnName="ID")
+	    )
+    private Set<Partner> partners=  new HashSet<Partner>();
 }

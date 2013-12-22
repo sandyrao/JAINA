@@ -23,7 +23,7 @@
         <field:display field="relationship" id="s_org_jaina_education_Student_relationship" object="${student}" z="E+bNaPOfBNlR2NkKebzFV58Zh10="/>
         <field:display field="guardianAddressLine1" id="s_org_jaina_education_Student_guardianAddressLine1" object="${student}" z="gBUvyeIYpOJ7cbvBh+eghWvPZFw="/>
         <field:display field="guardianAddressLine2" id="s_org_jaina_education_Student_guardianAddressLine2" object="${student}" z="4mTWpBbd1ysxlOjs5KleWDt6sZs="/>
-        <field:display field="sponsor" id="s_org_jaina_education_Student_sponsor" object="${student}" z="OeSKtpdk8hEBfkibxX3OZYXJzkk="/>
-        <field:display field="partner" id="s_org_jaina_education_Student_partner" object="${student}" z="i+gBngtrhwCxuMyGS9MUscI6yLs="/>
+        <field:display field="partners" id="s_org_jaina_education_Student_partners" object="${student}" z="zbklR1bv4PoshG8eESuhI/IPYkc="/>
+        <field:display field="sponsors" id="s_org_jaina_education_Student_sponsors" object="${student}" z="r3rfF5ji7M+M0RAOrxd+qI+y2JY="/>
     </page:show>
 </div>

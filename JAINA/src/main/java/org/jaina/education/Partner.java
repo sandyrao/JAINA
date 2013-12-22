@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
@@ -95,6 +96,6 @@ public class Partner {
     @Column(name = "COMMENTS")
     private String comments;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "partner")
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "partners")
     private Set<Student> Students = new HashSet<Student>();
 }

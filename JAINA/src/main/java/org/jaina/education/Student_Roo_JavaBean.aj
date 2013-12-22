@@ -4,6 +4,7 @@
 package org.jaina.education;
 
 import java.util.Date;
+import java.util.Set;
 import org.jaina.education.Partner;
 import org.jaina.education.Sponsor;
 import org.jaina.education.Student;
@@ -170,20 +171,20 @@ privileged aspect Student_Roo_JavaBean {
         this.guardianAddressLine2 = guardianAddressLine2;
     }
     
-    public Sponsor Student.getSponsor() {
-        return this.sponsor;
+    public Set<Sponsor> Student.getSponsors() {
+        return this.sponsors;
     }
     
-    public void Student.setSponsor(Sponsor sponsor) {
-        this.sponsor = sponsor;
+    public void Student.setSponsors(Set<Sponsor> sponsors) {
+        this.sponsors = sponsors;
     }
     
-    public Partner Student.getPartner() {
-        return this.partner;
+    public Set<Partner> Student.getPartners() {
+        return this.partners;
     }
     
-    public void Student.setPartner(Partner partner) {
-        this.partner = partner;
+    public void Student.setPartners(Set<Partner> partners) {
+        this.partners = partners;
     }
     
 }

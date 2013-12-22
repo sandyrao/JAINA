@@ -205,3 +205,18 @@ hint jpa
 // [failed] field set --fieldName Students --type ~.Student --class ~.Partner --cardinality MANY_TO_ONE --mappedBy partner
 field set --fieldName Students --type ~.Student --class ~.Partner --cardinality ONE_TO_MANY --mappedBy partner
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-14 20:48:51
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-15 01:01:52
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-15 01:30:27
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-22 17:46:25
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-22 17:47:25
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-22 18:05:57
+hint
+hint web mvc
+web mvc update tags --backup 
+web mvc update tags 
+web mvc update tags 
+web mvc all --package org.jaina.education.web 
+web mvc controller --class ~.web.StudentController 
+web mvc all --package org.jaina.education.web
+help
+version
